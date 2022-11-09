@@ -1,0 +1,169 @@
+/*--ここから横幅479px以内--*/
+@media screen and (max-width: 479px) {
+    div.header {
+        width: 200px;
+        height: 200px;
+        background-color: #141f40;
+    }  
+
+    div.headwaku {
+        width: 60px;
+        height: 160px;
+        background-color: white;
+        display: block;
+        flex-wrap: wrap;
+        position: relative;
+        top: 20px;
+	    left: 70px; 
+     }
+
+    div.item1:first-child {
+        position:relative;
+        left: 1px;
+    }
+
+     div.item1,div.item2,div.item3 {
+        width: 40px;
+        height: 40px;
+        background-color: #a9004b;
+        position:relative;
+        top: 10px;
+        left: 5px;
+        
+    }
+     
+    
+     div.main{
+        width: 200px;
+        height: 310px;
+       
+     }
+      
+     div.left{
+        width: 200px;
+        height: 100px;
+        background-color: #80bfa8;
+     }
+    
+    
+    div.right{
+        width: 200px;
+        height: 210px;
+       background-color: #8c2727;
+               
+    } 
+
+    div.item4,div.item5,div.item6 {
+        width: 140px;
+        height: 40px;
+        background-color: #ff863f;
+        border: 5px solid;
+        border-color: white;
+        position:relative;
+        top: 20px;
+        left: 25px;
+    }
+
+    div.footer {
+        width: 200px;
+        height: 100px;
+        background-color: #d98d30;
+        
+    }
+}
+
+/*--ここまで--*/
+
+
+/*--ここから横幅479px以上--*/
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.header {
+    width: 400px;
+    height: 100px;
+    background-color: #141f40;
+}
+
+.headwaku {
+    width: 160px;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    position:relative;
+    top: 20px;
+	left: 210px;
+    }
+
+.item1,.item2,.item3 {
+    width: 40px;
+    height: 40px;
+    background-color: #a9004b;
+}
+
+.item1 {
+    margin: 10px 5px 10px 10px; 
+}
+
+.item2 {
+    margin: 10px 5px 10px 5px;   
+}
+
+.item3 {
+    margin: 10px 10px 10px 5px;         
+}
+
+.main{
+   width: 400px;
+   height: 250px;
+  
+}
+
+
+ .left{
+    width: 150px;
+    height: 250px;
+    background-color: #80bfa8;
+    float: left;
+}
+
+
+.right{
+    width: 250px;
+    height: 250px;
+    background-color: #8c2727;
+    float: left;
+    
+}
+
+.item4,.item5,.item6 {
+    width: 140px;
+    height: 40px;
+    background-color: #ff863f;
+    border: 5px solid;
+    border-color: white;
+    position:relative;
+    top: 40px;
+	left: 40px;
+}
+
+
+.item4 {
+    margin-bottom: 10px;
+}
+
+.item6 {
+    margin-top: 10px;        
+}
+
+
+
+.footer{
+    width: 400px;
+    height: 100px;
+    background-color: #d98d30;
+    
+}
