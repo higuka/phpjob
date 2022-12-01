@@ -3,18 +3,14 @@
     div.header {
         width: 200px;
         height: 200px;
-        background-color: #141f40;
     }  
 
     div.headwaku {
         width: 60px;
         height: 160px;
-        background-color: white;
         display: block;
         flex-wrap: wrap;
-        position: relative;
-        top: 20px;
-	    left: 70px; 
+        left: 70px; 
      }
 
     div.item1:first-child {
@@ -23,9 +19,6 @@
     }
 
      div.item1,div.item2,div.item3 {
-        width: 40px;
-        height: 40px;
-        background-color: #a9004b;
         position:relative;
         top: 10px;
         left: 5px;
@@ -42,33 +35,24 @@
      div.left{
         width: 200px;
         height: 100px;
-        background-color: #80bfa8;
      }
     
     
     div.right{
         width: 200px;
         height: 210px;
-       background-color: #8c2727;
                
     } 
 
     div.item4,div.item5,div.item6 {
-        width: 140px;
-        height: 40px;
-        background-color: #ff863f;
-        border: 5px solid;
-        border-color: white;
-        position:relative;
         top: 20px;
-        left: 25px;
+        left: 30px;
     }
 
     div.footer {
         width: 200px;
         height: 100px;
-        background-color: #d98d30;
-        
+               
     }
 }
 
