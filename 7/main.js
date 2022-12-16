@@ -1,25 +1,32 @@
 //７章チェックテスト問1
 let numbers = [2, 5, 12, 13, 15, 18, 22];
-//ここに答えを実装してください。↓↓↓
-var num = numbers.filter(function isEven(value) {
-    return value % 2 === 0;
-  });
-  console.log(num+ 'は偶数です');
+function isEven(data) {
+
+for (let i = 0; i < data.length; i++) {
+//ここに答えを実装してください。
+var num = (data [i]);
+if(num % 2 !== 0)continue;
+console.log(num + 'は偶数です');
+}
+}
+//関数呼び出し
+isEven(numbers);
+
 
 
   //７章チェックテスト問2
 class Car {
 
     //コンストラクタ
-    constructor(eneos, わ12345) {
-        this.eneos = eneos;
-        this.わ12345 = わ12345;
+    constructor(gasolene, number) {
+        this.gasolene = gasolene;
+        this.number = number;
     }
 
     //（関数）作成
     getNumGas() {
-          console.log(`ガソリンは${this.eneos}です。`);
-          console.log(`ナンバーは${this.わ12345}です`);
+          console.log(`ガソリンは${this.gasolene}です。`);
+          console.log(`ナンバーは${this.number}です`);
     }
 }
 //ガソリンとナンバーがセットのオブジェクト作成
