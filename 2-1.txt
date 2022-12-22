@@ -1,0 +1,57 @@
+お世話になっております｡
+ご指摘いただいた内容で前回と同一タグを以下にて明記しました｡
+お手数ではございますが､添削をお願いいたします。
+
+■ 提出時の記述内容その１
+(1)要素の取得 理解度チェック問題について
+参考URL
+https://webukatu.com/wordpress/blog/38532/
+(2)約3、4時間～
+
+問題↓---------------------
+
+
+    <style>
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <script>
+        //問題①：idで要素を取得して、背景色を赤色に変更する処理を記述してください。
+    </script>
+
+
+↑問題ここまで------------------
+
+
+
+回答htmlファイルは以下にて明記↓------------------
+
+
+ <title>Document</title>
+    <style>
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+<div id="box"></div>
+    <script type="text/javascript">
+        const box = document.getElementById('box');
+     
+        box.addEventListener('mouseover', function() {
+          box.style.backgroundColor = 'red';
+         });
+        console.log(box);
+        </script>
+
+
+↑回答ここまで----------------------
