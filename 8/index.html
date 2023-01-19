@@ -17,23 +17,23 @@
     </style>
 </head>
 <body>
-    <form id="form">
-    <select  name="select" onchange="changeLang()">
+   
+    <select id="select_aaa" onchange="changeLang()">
         <option id="select">選択してください</option>
-        <option id="selected_jpn">日本語</option>
+        <option id="selected_jnp">日本語</option>
         <option id="selected_en">English</option>
         <option id="selected_all">全て表示</option>
     </select>
-    </form>
+   
     
     <table>
-        <tr> 
+        <tr id="t-jpn"> 
             <th>日本</th>
             <td>こんにちは</td>
             <td>ありがとう</td>
             <td>さようなら</td>
         </tr>
-        <tr>
+        <tr id="t-en">
             <th>English</th>
             <td>Hello</td>
             <td>Thank you</td>
@@ -45,23 +45,27 @@
         
 
 function changeLang(){
-   if(document.getElementById('select')){
-      id = document.getElementById('select').value;
+    let elm_jpn = document.querySelector('#t-jpn');
+    let elm_en = document.querySelector('#t-en');
 
-    if(id == 'selected_jpn') {
-        document.getElementById('selected_jpn').selected = true;
-        } 
-    else if(id == 'selected_en') {
-        document.getElementById('Bselected_en').selected = true;
+   if(document.getElementById('select_aaa')){
+      id = document.getElementById('select_aaa').value;
+
+    if(id === '日本語') {
+        elm_jpn.style.display = 'block';
+        elm_en.style.display = 'none';
+         } 
+    else if(id === 'English') {
+        elm_jpn.style.display = 'none';
+        elm_en.style.display = 'block';
         }
-    else if(id == 'selected_all') {
-        document.getElementById('selected_all').selected = true;
+    else if(id === '全て表示') {
+        elm_jpn.style.display = 'block';
+        elm_en.style.display = 'block';
          }
         }
     }
 
-        document.getElementById('form').select.onchange = function() {
-        document.getElementById('form').select.value;}
     </script>
 </body>
 </html>
