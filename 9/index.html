@@ -21,28 +21,10 @@
     <script>
     //  ここにjQueryを記入
    
-  $('button').click(function(){
-    $('.left , .right ').toggleClass("active");
- })
-
- const curtain = $(".list").addClass("active");
-  if (curtain === true) {
-           onFunc();
-      }
-   else {
-         offFunc();
-        }
-     
-   function onFunc(){ 
-   $(".left").animate({width:'0'}, 2000 );
-   $(".right").animate({width:'0'}, 2000 );
-   }
-
-   function offFunc(){ 
-   $(".left").animate({width:'50%'}, 2000 );
-   $(".right").animate({width:'50%'}, 2000 );
- }
-   
+  $('button').on("click" , function(){
+    $('.left , .right ').toggleClass('action');
+ })   
+ 
     </script>
   </body>
 </html>
