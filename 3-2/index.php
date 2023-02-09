@@ -2,14 +2,12 @@
 <?php
 
 $fruits = ["りんご" => 300, "みかん" => 150, "桃" => 3000];
-
 $fruits_array = [1, 1, 1];
 var_dump($fruits_array);
 echo '<br>';
 ?>
 
 <!-- step2:単価を計算する関数を定義してください。 -->
-
 
 <?php
 $i = 0;
@@ -18,10 +16,7 @@ function fruits_sale($fruits , $fruits_array){
 $sale = $fruits * $fruits_array ; 
 return $sale ;
 }
- 
-echo fruits_sale();
 
-echo '<br>';
 ?>
 
 <!-- step3:繰り返しを使ってそれぞれのフルーツを書き出してください。 -->
