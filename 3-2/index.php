@@ -3,8 +3,6 @@
 
 $fruits = ["りんご" => 300, "みかん" => 150, "桃" => 3000];
 $fruits_array = [1, 1, 1];
-var_dump($fruits_array);
-echo '<br>';
 ?>
 
 <!-- step2:単価を計算する関数を定義してください。 -->
@@ -25,7 +23,9 @@ return $sale ;
 
 foreach ($fruits as $key => $value) {
     echo $key."は".fruits_sale($value , $fruits_array[$i])."円です。";
-    $i++;    
+    $i++; 
+    echo '<br>';   
    }
-echo '<br>';
+
+
 ?>
