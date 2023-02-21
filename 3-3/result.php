@@ -1,31 +1,32 @@
 <?php
-// 現在時刻を取得
-echo date("Y/m/d", time());
-?>
-の運勢は
-
-<?php
 $my_name = $_POST['my_name'];
 ?>
-<p>選ばれた数字は<?php echo $my_name; ?></p>
 
+<?php echo date("Y/m/d", time()); ?>の運勢は
+
+選ばれた数字は<?php
+$array = str_split($my_name,1);
+$choose = array_rand($array,1);
+$result = $array[$choose];
+echo $result;
+?>
 
 
 <?php
-$my_name = rand(0,9);
-echo $omikuji;
+if($result == 0){
 
-if ($omikuji === 0) {
-          echo "凶";
-        } elseif ($omikuji <= 3) {
-           echo "小吉";
-        } elseif ($omikuji <= 6) {   // 4,5,6
-           echo "中吉";             
-        } elseif ($omikuji <= 8) {    // 7,8
-           echo "吉";                
-        } else { 
-           echo "大吉";              // 9
-        }
-  ?>
+echo "凶";
+}elseif($result >= 1 and $result <= 3){
 
+echo "小吉";
+}elseif($result >= 4 and $result <= 6){
 
+echo "中吉";
+}elseif($result >= 7 and $result <= 8){
+
+echo "吉";
+}else{
+
+echo "大吉";
+}
+?>
