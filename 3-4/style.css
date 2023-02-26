@@ -1,0 +1,14 @@
+
+body {
+    background-color: grey;
+    text-align: center;
+    color: white;
+    font-family: serif;
+    font-weight: bold;
+    
+  }
+
+
+  p.line {
+    border-bottom: 4px solid white;
+ }
