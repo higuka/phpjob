@@ -3,6 +3,10 @@
 //[question.php]から送られてきた名前の変数、選択した回答、問題の答えの変数を作成
 $my_name = $_POST['my_name'];
 
+$ans_test1 = $_POST['ans_test1'];
+$ans_test2 = $_POST['ans_test2'];
+$ans_test3 = $_POST['ans_test3'];
+
 //選択した回答と正解が一致していれば「正解！」、一致していなければ「残念・・・」と出力される処理を組んだ関数を作成する
 
 ?>
@@ -12,9 +16,8 @@ $my_name = $_POST['my_name'];
 <p>①の答え</p>
 <!--作成した関数を呼び出して結果を表示-->
 <?php
-$test1 = $_POST['test1'];
 
-if($test1 == $test1[0]){
+if($test1 == $ans_test1){
 	echo "正解！";
 }else{
 	echo "残念・・・";
@@ -23,9 +26,8 @@ if($test1 == $test1[0]){
 <p>②の答え</p>
 <!--作成した関数を呼び出して結果を表示-->
 <?php
-$test2 = $_POST['test2'];
 
-if($test2 == $test2[3]){
+if($test2 == $ans_test2){
 	echo "正解！";
 }else{
 	echo "残念・・・";
@@ -34,9 +36,8 @@ if($test2 == $test2[3]){
 <p>③の答え</p>
 <!--作成した関数を呼び出して結果を表示-->
 <?php
-$test3 = $_POST['test3'];
 
-if($test3 == $test3[1]){
+if($test3 == $ans_test3){
 	echo "正解！";
 }else{
 	echo "残念・・・";
